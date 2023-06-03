@@ -1,12 +1,46 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
+:root{
+    --color-primary: #fc2f68;
+    --color-danger: #fc2f68;
+    --color-sucess: #f9ebc4;
+    --color-warning: #ffb391;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #472f5f;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-theme-variables{
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	background: #f6f5f7;
+	background: #181a1e;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -37,7 +71,7 @@ span {
 }
 
 a {
-	color: #333;
+	color: #fff;
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
@@ -46,8 +80,8 @@ a {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #fc2f68;
+	background-color: #fc2f68;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -59,7 +93,7 @@ button {
 }
 
 button:hover{
-	background-color: #c2270c;
+	background-color: #cd2353;
 }
 
 button:active {
@@ -76,7 +110,8 @@ button.ghost {
 }
 
 form {
-	background-color: #FFFFFF;
+	color: #fff;
+	background-color: #181a1e;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -87,7 +122,7 @@ form {
 }
 
 input {
-	background-color: #eee;
+	background-color: #32353a;
 	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
@@ -95,7 +130,8 @@ input {
 }
 
 .container {
-	background-color: #fff;
+	color: #fff;
+	background-color: #181a1e;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
@@ -165,9 +201,9 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: #fc2f68;
+	background: -webkit-linear-gradient(to right, black, black);
+	background: linear-gradient(to right, #202229, #181a1e);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
