@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-in</title>  
+</head>
+<body>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="/register" method="POST">
+			<h1>Cadastre-se</h1>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" name="name"/>
+			<input type="email" placeholder="Email" name="email"/>
+			<input type="password" placeholder="Password" name="senha" />
+			<input type="text" placeholder="Facebook ID" name="facebook_key"/>
+			<button type="submit">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="/login" method="POST">
+			<h1>Faça Login</h1>
+			<span>ou use a sua conta</span>
+			<input type="email" placeholder="Email" name="email"/>
+			<input type="password" placeholder="Senha" name="senha"/>
+			<p id="userNotFound">Usuário não encontrado!</p>
+			<a href="#">Esqueceu a sua senha?</a>
+			<button type="submit">Entrar</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Bem vindo de Volta!</h1>
+				<p>Para se manter conectado conosco, faça o login com suas informações pessoais</p>
+				<button class="ghost" id="signIn">Entrar agora</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Olá amigo!</h1>
+				<p>Entre com as suas credenciais e inicie a jornada com a Crassus</p>
+				<button class="ghost" id="signUp">Criar nova conta</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="signin.js"></script>
+</body>
+</html>
